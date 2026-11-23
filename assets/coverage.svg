@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Skills coverage report">
+  <defs>
+    <linearGradient id="b1" x1="0" x2="1"><stop offset="0" stop-color="#1f6feb"/><stop offset="1" stop-color="#58a6ff"/></linearGradient>
+    <linearGradient id="b2" x1="0" x2="1"><stop offset="0" stop-color="#8957e5"/><stop offset="1" stop-color="#d2a8ff"/></linearGradient>
+    <linearGradient id="b3" x1="0" x2="1"><stop offset="0" stop-color="#db61a2"/><stop offset="1" stop-color="#ff9bce"/></linearGradient>
+    <linearGradient id="b4" x1="0" x2="1"><stop offset="0" stop-color="#238636"/><stop offset="1" stop-color="#56d364"/></linearGradient>
+    <clipPath id="c"><rect width="1000" height="300" rx="16"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace}
+    .row{opacity:0;animation:in .5s ease-out forwards}
+    @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    .bar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow 1.2s cubic-bezier(.2,.8,.2,1) forwards}
+    @keyframes grow{to{transform:scaleX(1)}}
+    .r1{animation-delay:.2s}.r2{animation-delay:.45s}.r3{animation-delay:.7s}.r4{animation-delay:.95s}
+  </style>
+  <g clip-path="url(#c)" class="mono">
+    <rect width="1000" height="300" fill="#0d1117"/>
+    <rect x=".5" y=".5" width="999" height="299" rx="16" fill="none" stroke="#30363d"/>
+    <text x="32" y="44" font-size="15" fill="#e6edf3" font-weight="700">📋 Skills Coverage Report</text>
+    <text x="968" y="44" font-size="12" fill="#7d8590" text-anchor="end">all suites passing <tspan fill="#3fb950">●</tspan></text>
+    <line x1="32" y1="62" x2="968" y2="62" stroke="#21262d"/>
+    <text x="32" y="86" font-size="12" fill="#7d8590">SUITE</text>
+    <text x="300" y="86" font-size="12" fill="#7d8590">EXPERIENCE</text>
+    <text x="640" y="86" font-size="12" fill="#7d8590">COVERS</text>
+
+    <g class="row r1" font-size="14">
+      <text x="32" y="126" fill="#79c0ff">quality-assurance</text>
+      <rect x="300" y="114" width="280" height="14" rx="7" fill="#161b22"/>
+      <rect x="300" y="114" width="280" height="14" rx="7" fill="url(#b1)" class="bar r1"/>
+      <text x="590" y="126" fill="#e6edf3" font-size="12">3y</text>
+      <text x="640" y="126" fill="#8b949e" font-size="13">Manual · API · Regression · Jira</text>
+    </g>
+    <g class="row r2" font-size="14">
+      <text x="32" y="170" fill="#d2a8ff">wordpress-dev</text>
+      <rect x="300" y="158" width="280" height="14" rx="7" fill="#161b22"/>
+      <rect x="300" y="158" width="280" height="14" rx="7" fill="url(#b2)" class="bar r2"/>
+      <text x="590" y="170" fill="#e6edf3" font-size="12">3y</text>
+      <text x="640" y="170" fill="#8b949e" font-size="13">Elementor · WooCommerce · PHP</text>
+    </g>
+    <g class="row r3" font-size="14">
+      <text x="32" y="214" fill="#ff9bce">content-and-seo</text>
+      <rect x="300" y="202" width="280" height="14" rx="7" fill="#161b22"/>
+      <rect x="300" y="202" width="187" height="14" rx="7" fill="url(#b3)" class="bar r3"/>
+      <text x="590" y="214" fill="#e6edf3" font-size="12">2y</text>
+      <text x="640" y="214" fill="#8b949e" font-size="13">Strategy · Yoast SEO · Analytics</text>
+    </g>
+    <g class="row r4" font-size="14">
+      <text x="32" y="258" fill="#56d364">web-fundamentals</text>
+      <rect x="300" y="246" width="280" height="14" rx="7" fill="#161b22"/>
+      <rect x="300" y="246" width="280" height="14" rx="7" fill="url(#b4)" class="bar r4" opacity=".55"/>
+      <text x="590" y="258" fill="#e6edf3" font-size="12">✓</text>
+      <text x="640" y="258" fill="#8b949e" font-size="13">HTML · CSS · JavaScript</text>
+    </g>
+  </g>
+</svg>
